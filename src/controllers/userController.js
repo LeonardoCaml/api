@@ -6,6 +6,6 @@ exports.listar = async (req, res) => {
         res.json(result.rows)
     } catch (error) {
         console.log("Deu errado mn: ", error)
-        res.status(500).send('Errou:', error)
+        res.status(500).send('Errou:' + error)
     }
 }
