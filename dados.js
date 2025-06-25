@@ -8,6 +8,6 @@ app.use(cors())
 app.use(express.json())
 app.use('/', userRoutes)
 
-app.send(port, () => {
+app.listen(port, () => {
     console.log("rodando")
 })
